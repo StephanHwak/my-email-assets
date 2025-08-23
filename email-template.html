@@ -1,58 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Account Update</title>
+    <style>
+        .container { font-family: sans-serif; padding: 20px; background-color: #f4f4f4; }
+        .content { background-color: #ffffff; padding: 30px; border-radius: 5px; }
+        .button { background-color: #1877f2; color: white; padding: 15px 25px; text-decoration: none; border-radius: 5px; display: inline-block; }
+    </style>
 </head>
-<body style="margin: 0; padding: 0; background-color: #e9ebee; font-family: Arial, sans-serif;">
-  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #e9ebee;">
-    <tr><td height="32"></td></tr>
-    
-    <tr>
-      <td align="center">
-        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 600px;">
-          <tr>
-            <td align="center" style="background-image: linear-gradient(#ffffff, #edf2fa); border-radius: 5px; text-align: left; color: #1c2b33; font-size: 15px; line-height: 24px; padding: 32px;">
-              
-              <p style="margin: 0 0 16px 0;">Hi {{name}},</p>
-              
-              <p style="margin: 0 0 16px 0;">We have reviewed your business account and found that it does not meet our terms, including our <a href="https://www.violation-report.com/privacy-policy.html" style="color: #4a90e2; text-decoration: none;">Commerce Eligibility Requirements</a>. As a result, your business account currently has restrictions. You are unable to sell/monetize from existing shops/tools at this time.</p>
-              
-              <p style="margin: 0 0 16px 0;">Our decision was made based on a review by our team and/or automated systems.</p>
-              
-              <p style="margin: 0 0 24px 0;">If you believe this is a mistake, you may request a review of your business account by visiting Business Support Home on a computer.</p>
-              
-              <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                <tr>
-                  <td align="center" style="border-radius: 6px; background-color: #4267b2;">
-                    <a href="{{unique_link}}" target="_blank" style="font-size: 16px; font-weight: bold; color: #ffffff; text-decoration: none; display: inline-block; padding: 12px 25px; border-radius: 6px;">Visit Business Support Home</a>
-                  </td>
-                </tr>
-              </table>
-              
-              <p style="margin: 24px 0 0 0;">Best regards,<br>FB Monetisation Team</p>
-
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    
-    <tr>
-      <td align="center" style="padding: 24px 10px 0 10px;">
-        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 600px; text-align: center; color: #8f949b; font-size: 12px;">
-          <tr>
-            <td>
-              You are receiving this email because you are registered on our platform.
-            </td>
-          </tr>
-          <tr><td height="12"></td></tr>
-        </table>
-      </td>
-    </tr>
-
-    <tr><td height="32"></td></tr>
-  </table>
+<body>
+    <div class="container">
+        <div class="content">
+            <h3>Hello {{name}},</h3>
+            <p>Thank you for being a valued client. Please use the secure, one-time link below to provide your feedback or submit your appeal.</p>
+            <p>This link will expire in 7 days or after one use.</p>
+            <a href="{{unique_link}}" class="button">Click Here to Access Your Form</a>
+            <p>If you did not request this, please disregard this email.</p>
+            <p>Best regards,<br>The Violation Report Team</p>
+        </div>
+    </div>
 </body>
 </html>
